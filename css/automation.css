@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Automation
+   ========================================================================== */
+
+.automation{
+  background: var(--bg-raised);
+  border-top: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.automation-grid{
+  display: grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap: clamp(2.5rem, 6vw, 4.5rem);
+  align-items: center;
+}
+
+.automation-copy p{ font-size: 1.02rem; }
+.automation-copy p + p{ margin-top: 1rem; }
+
+.automation-points{
+  margin-top: 1.75rem;
+  display: grid;
+  gap: 1rem;
+}
+.automation-points li{
+  display: flex;
+  gap: .8rem;
+  align-items: flex-start;
+  font-size: .92rem;
+  color: var(--ink-muted);
+}
+.automation-points .glyph{
+  flex: none;
+  width: 26px; height: 26px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  color: var(--red);
+  display: grid;
+  place-items: center;
+  font-size: .8rem;
+  font-family: var(--font-display);
+}
+
+/* flow diagram */
+.flow{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: var(--bg-panel);
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+}
+.flow-step{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block: .9rem;
+}
+.flow-step .node{
+  flex: none;
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: .85rem;
+  color: var(--ink);
+  background: var(--bg-raised);
+  transition: border-color .3s, color .3s;
+}
+.flow-step:hover .node{ border-color: var(--red); color: var(--red); }
+.flow-step .label strong{
+  display: block;
+  font-family: var(--font-display);
+  font-size: .92rem;
+  color: var(--ink);
+}
+.flow-step .label span{
+  font-size: .8rem;
+  color: var(--ink-faint);
+}
+.flow-connector{
+  width: 1px;
+  height: 22px;
+  margin-left: 21px;
+  background: linear-gradient(var(--line), var(--red-glow));
+}
+
+@media (max-width: 900px){
+  .automation-grid{ grid-template-columns: 1fr; }
+}
