@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add('js')</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John McGregor, McGregor-Codes, Frontend Developer &amp; UI/UX Designer</title>
+<meta name="description" content="Portfolio of John McGregor (McGregor-Codes), a frontend developer and UI/UX designer in Port Harcourt, Nigeria, building websites, interfaces and automated workflows.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="John McGregor, McGregor-Codes">
+<meta property="og:description" content="Frontend developer and UI/UX designer building websites, interfaces and automated workflows. Code. Design. Automate.">
+<meta property="og:image" content="assets/images/headshot.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon-180.png">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/idcard.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/skills.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/automation.css">
+<link rel="stylesheet" href="css/journey.css">
+<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main" style="position:absolute;left:-999px;top:auto;">Skip to content</a>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="#home" aria-label="McGregor-Codes home">
+      <img src="assets/images/logo-light.png" alt="" width="26" height="18">
+      <span>McGregor<em>-Codes</em></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <button class="nav-links-close" data-nav-close type="button" aria-label="Close menu">✕</button>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#automation">Automation</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-sm" href="#contact">Let's Connect</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-scrim" data-nav-scrim></div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-circuit" aria-hidden="true">
+      <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+        <path class="line" d="M0 40 L120 40 L160 80 L160 180" fill="none"/>
+        <path class="line" d="M1200 60 L1080 60 L1040 100 L1040 240 L1000 280" fill="none"/>
+        <path class="line" d="M1200 640 L1090 640 L1050 600 L920 600" fill="none"/>
+        <circle class="dot" cx="160" cy="180" r="3"/>
+        <circle class="dot" cx="1000" cy="280" r="3"/>
+        <circle class="dot" cx="920" cy="600" r="3"/>
+      </svg>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker"><span class="dot-live" aria-hidden="true"></span> Open to new builds, based in Port Harcourt, Nigeria</p>
+
+        <h1>
+          <span class="line"><span>Code that works.</span></span>
+          <span class="line"><span>Design that lasts.</span></span>
+          <span class="line"><span>Workflows that</span></span>
+          <span class="line"><span>run themselves.</span></span>
+        </h1>
+
+        <p class="hero-lede">I'm John McGregor. Under the name McGregor-Codes I build websites, interfaces and the automated workflows that sit behind them, for people who'd rather their tools did the repetitive work.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View My Work</a>
+          <a class="btn btn-ghost" href="#contact">Let's Connect</a>
+          <button class="btn btn-ghost" id="showCardBtn" type="button" aria-expanded="false">Show Card</button>
+        </div>
+
+        <div class="id-card" id="idCard">
+          <button class="id-card-close" type="button" aria-label="Hide card">✕</button>
+          <div class="id-card-top" aria-hidden="true">
+            <svg class="id-card-mark" viewBox="0 0 1211 681" fill="none"><path d="M604 20 L1140 330 L604 640 L68 330 Z" stroke="currentColor" stroke-width="18"/></svg>
+          </div>
+          <img class="id-card-avatar" src="assets/images/headshot.jpg" alt="" width="72" height="72">
+          <div class="id-card-body">
+            <h3>John McGregor</h3>
+            <p class="id-card-role">Frontend Developer &amp; UI/UX Designer</p>
+            <p class="id-card-loc">Port Harcourt, Nigeria</p>
+            <div class="id-card-social">
+              <a href="https://github.com/McGregor-Codes" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+              <a href="https://www.linkedin.com/in/mcgregor-codes" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+              <a href="mailto:mcgregorjohn53@gmail.com" aria-label="Email">@</a>
+              <a href="#" data-whatsapp="2348161249729" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+            </div>
+            <button class="btn btn-primary btn-sm" id="saveContactBtn" type="button">Save contact</button>
+          </div>
+        </div>
+
+        <dl class="hero-meta">
+          <div>
+            <dt>Focus</dt>
+            <dd>Frontend &amp; UI/UX</dd>
+          </div>
+          <div>
+            <dt>Shipped</dt>
+            <dd>4 live builds</dd>
+          </div>
+          <div>
+            <dt>Background</dt>
+            <dd>Medical Biochemistry</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-portrait">
+        <div class="hero-portrait-frame">
+          <img src="assets/images/headshot.jpg" alt="Portrait of John McGregor, founder of McGregor-Codes" width="900" height="1352">
+        </div>
+        <div class="hero-badge">
+          <span class="glyph">&lt;/&gt;</span> Code. Design. Automate.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>About</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>John McGregor works under the name <strong>McGregor-Codes</strong>, building websites, interfaces and the workflows that sit behind them. His background starts in a laboratory, not a text editor: a <strong>B.Sc. in Medical Biochemistry</strong> from the University of Cross River State, where he spent months running biochemical assays and keeping exact, audit-ready records at the University of Calabar Teaching Hospital.</p>
+          <p>That same attention to detail carried over when he moved into frontend development, UI/UX and graphic design, first informally, then through a Diploma in Graphic Design, and now through hands-on projects built with HTML, CSS, JavaScript, Tailwind CSS and Figma.</p>
+          <p>He's currently serving as a Corps Member with the National Youth Service Corps in Rivers State, where he was elected CDS President for the Federal Road Safety Corps community development group and built the FRSC CDS Attendance &amp; Fine Tracker, a system his own team now uses to record attendance and manage lateness fines.</p>
+        </div>
+
+        <dl class="about-facts reveal">
+          <div>
+            <dt>Based in</dt>
+            <dd>Port Harcourt, Rivers State, Nigeria</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Frontend development, UI/UX design, automation</dd>
+          </div>
+          <div>
+            <dt>Education</dt>
+            <dd>B.Sc. Medical Biochemistry, University of Cross River State (UNICROSS)</dd>
+          </div>
+          <div>
+            <dt>Currently</dt>
+            <dd>NYSC Corps Member, elected CDS President (FRSC)</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Skills &amp; technologies</h2>
+        <p>What's actually behind the projects above. Always moving, never static.</p>
+      </div>
+    </div>
+
+    <div class="skills-marquee reveal">
+      <div class="float-shape shape-a" aria-hidden="true"></div>
+      <div class="float-shape shape-b" aria-hidden="true"></div>
+      <div class="float-shape shape-c" aria-hidden="true"></div>
+
+      <div class="marquee-row" data-dir="left">
+        <ul class="marquee-track">
+          <li class="skill-chip"><span class="skill-glyph">&lt;/&gt;</span><span class="skill-name">HTML5</span></li>
+          <li class="skill-chip"><span class="skill-glyph">#</span><span class="skill-name">CSS3</span></li>
+          <li class="skill-chip"><span class="skill-glyph">JS</span><span class="skill-name">JavaScript</span></li>
+          <li class="skill-chip"><span class="skill-glyph">nd</span><span class="skill-name">Node.js</span></li>
+          <li class="skill-chip"><span class="skill-glyph">tw</span><span class="skill-name">Tailwind CSS</span></li>
+          <li class="skill-chip"><span class="skill-glyph">Fg</span><span class="skill-name">Figma</span></li>
+          <li class="skill-chip"><span class="skill-glyph">Ps</span><span class="skill-name">Photoshop</span></li>
+          <li class="skill-chip"><span class="skill-glyph">Ai</span><span class="skill-name">Illustrator</span></li>
+          <!-- duplicated for a seamless loop -->
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">&lt;/&gt;</span><span class="skill-name">HTML5</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">#</span><span class="skill-name">CSS3</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">JS</span><span class="skill-name">JavaScript</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">nd</span><span class="skill-name">Node.js</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">tw</span><span class="skill-name">Tailwind CSS</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">Fg</span><span class="skill-name">Figma</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">Ps</span><span class="skill-name">Photoshop</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">Ai</span><span class="skill-name">Illustrator</span></li>
+        </ul>
+      </div>
+
+      <div class="marquee-row" data-dir="right">
+        <ul class="marquee-track">
+          <li class="skill-chip"><span class="skill-glyph">git</span><span class="skill-name">Git</span></li>
+          <li class="skill-chip"><span class="skill-glyph">gh</span><span class="skill-name">GitHub</span></li>
+          <li class="skill-chip"><span class="skill-glyph">vs</span><span class="skill-name">VS Code</span></li>
+          <li class="skill-chip"><span class="skill-glyph">cd</span><span class="skill-name">CorelDRAW</span></li>
+          <li class="skill-chip"><span class="skill-glyph">xl</span><span class="skill-name">Excel</span></li>
+          <li class="skill-chip"><span class="skill-glyph">wf</span><span class="skill-name">Wireframing</span></li>
+          <li class="skill-chip"><span class="skill-glyph">pt</span><span class="skill-name">Prototyping</span></li>
+          <li class="skill-chip"><span class="skill-glyph">dr</span><span class="skill-name">Data Reporting</span></li>
+          <li class="skill-chip"><span class="skill-glyph">rd</span><span class="skill-name">Responsive Design</span></li>
+          <!-- duplicated for a seamless loop -->
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">git</span><span class="skill-name">Git</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">gh</span><span class="skill-name">GitHub</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">vs</span><span class="skill-name">VS Code</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">cd</span><span class="skill-name">CorelDRAW</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">xl</span><span class="skill-name">Excel</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">wf</span><span class="skill-name">Wireframing</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">pt</span><span class="skill-name">Prototyping</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">dr</span><span class="skill-name">Data Reporting</span></li>
+          <li class="skill-chip" aria-hidden="true"><span class="skill-glyph">rd</span><span class="skill-name">Responsive Design</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="work">
+    <div class="container">
+      <div class="projects-head section-head reveal">
+        <div>
+          <h2>Selected work</h2>
+          <p>Four live builds, each one a different kind of problem.</p>
+        </div>
+      </div>
+
+      <div class="project-list">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/images/techconnect-poster.jpg" alt="TechConnect 2026 event registration page" loading="lazy" width="640" height="440">
+            <video muted loop playsinline preload="none" poster="assets/images/techconnect-poster.jpg">
+              <source src="assets/videos/techconnect-preview.mp4" type="video/mp4">
+            </video>
+            <span class="project-tag">Event platform</span>
+          </div>
+          <div class="project-body">
+            <h3>TechConnect 2026</h3>
+            <p class="project-desc">A landing page and registration system for a free technology and digital-skills workshop held in Port Harcourt.</p>
+            <dl class="project-concept">
+              <dt>Concept</dt>
+              <dd>Move a visitor from reading about the event to a reserved seat in one scroll, with a state-driven registration form and a confirmation view, no backend framework involved.</dd>
+            </dl>
+            <ul class="project-features">
+              <li>Single-page event brief with date, venue and cost</li>
+              <li>Registration form with state and interest-area selection</li>
+              <li>Confirmation screen after a successful sign-up</li>
+            </ul>
+            <ul class="project-stack">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="https://mcgregor-codes.github.io/Techconnect_2026/" target="_blank" rel="noopener">Live demo</a>
+              <a class="text-link" href="https://github.com/McGregor-Codes/Techconnect_2026" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/images/portfolio-poster.jpg" alt="Earlier McGregor-Codes portfolio and design archive" loading="lazy" width="640" height="440">
+            <video muted loop playsinline preload="none" poster="assets/images/portfolio-poster.jpg">
+              <source src="assets/videos/portfolio-preview.mp4" type="video/mp4">
+            </video>
+            <span class="project-tag">Portfolio archive</span>
+          </div>
+          <div class="project-body">
+            <h3>Portfolio, First Edition</h3>
+            <p class="project-desc">An earlier personal site pairing frontend development with a graphic-design archive, flyers, brand covers and a working login demo, in one filterable showcase.</p>
+            <dl class="project-concept">
+              <dt>Concept</dt>
+              <dd>Bridge two skill sets in a single grid: filter between web builds and graphic design work, instead of running two separate portfolios.</dd>
+            </dl>
+            <ul class="project-features">
+              <li>Filterable project grid: web design and graphic design</li>
+              <li>Video previews for interactive builds</li>
+              <li>Downloadable resume and direct contact links</li>
+            </ul>
+            <ul class="project-stack">
+              <li>HTML5</li><li>CSS3</li><li>Tailwind CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="https://mcgregor-codes.github.io/Portfolio/" target="_blank" rel="noopener">Live demo</a>
+              <a class="text-link" href="https://github.com/McGregor-Codes/Portfolio" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/images/learnova-poster.jpg" alt="Learnova online learning platform homepage" loading="lazy" width="640" height="440">
+            <video muted loop playsinline preload="none" poster="assets/images/learnova-poster.jpg">
+              <source src="assets/videos/learnova-preview.mp4" type="video/mp4">
+            </video>
+            <span class="project-tag">Ed-tech concept</span>
+          </div>
+          <div class="project-body">
+            <h3>Learnova</h3>
+            <p class="project-desc">A multi-page concept site for an online tutoring platform that connects learners with tutors from home.</p>
+            <dl class="project-concept">
+              <dt>Concept</dt>
+              <dd>Work out the information architecture a real ed-tech product needs, home, about, curriculum, tutor matching and sign-up, before any backend logic gets written.</dd>
+            </dl>
+            <ul class="project-features">
+              <li>Multi-page structure: Home, About, Curriculum, Contact/Support</li>
+              <li>Dedicated tutor-connect and sign-up pages</li>
+              <li>Consistent navigation and branding across every page</li>
+            </ul>
+            <ul class="project-stack">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="https://mcgregor-codes.github.io/Learnova-Online-Learning/" target="_blank" rel="noopener">Live demo</a>
+              <a class="text-link" href="https://github.com/McGregor-Codes/Learnova-Online-Learning" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="assets/images/loginsignup-poster.jpg" alt="Secure client login and sign-up interface" loading="lazy" width="640" height="440">
+            <video muted loop playsinline preload="none" poster="assets/images/loginsignup-poster.jpg">
+              <source src="assets/videos/loginsignup-preview.mp4" type="video/mp4">
+            </video>
+            <span class="project-tag">Auth UI system</span>
+          </div>
+          <div class="project-body">
+            <h3>Secure Client Login</h3>
+            <p class="project-desc">A standalone sign-up and login interface pair with client-side validation and a clean, form-focused layout.</p>
+            <dl class="project-concept">
+              <dt>Concept</dt>
+              <dd>Build the authentication screens once, properly, so they can be dropped into any future project instead of rebuilt from scratch. Learnova already links out to this exact flow.</dd>
+            </dl>
+            <ul class="project-features">
+              <li>Paired sign-up and login views with shared styling</li>
+              <li>Password confirmation and a "remember me" state</li>
+              <li>"Forgot password" and account-switch links wired up</li>
+            </ul>
+            <ul class="project-stack">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="https://mcgregor-codes.github.io/Login-Signup-page/" target="_blank" rel="noopener">Live demo</a>
+              <a class="text-link" href="https://github.com/McGregor-Codes/Login-Signup-page" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AUTOMATION ============ -->
+  <section id="automation" class="automation">
+    <div class="container automation-grid">
+      <div class="automation-copy reveal">
+        <div class="section-head" style="margin-bottom:0;">
+          <h2>Automating the repetitive parts</h2>
+        </div>
+        <p>Not every good system needs someone doing the same task by hand every week. The FRSC CDS Attendance &amp; Fine Tracker John built for his community development group already does this in a small way: it calculates lateness fines and generates reports automatically instead of a person doing it in a notebook.</p>
+        <p>That instinct, replace repetition with a workflow, is the direction McGregor-Codes is building toward: connecting tools like n8n, webhooks and APIs so forms, sheets and messages talk to each other without manual steps in between.</p>
+
+        <ul class="automation-points">
+          <li><span class="glyph">＝</span> Google Sheets and JSON as a shared source of truth</li>
+          <li><span class="glyph">↔</span> Webhooks and REST APIs linking one tool to another</li>
+          <li><span class="glyph">−</span> Reports and calculations that used to be done by hand</li>
+        </ul>
+      </div>
+
+      <div class="flow reveal" aria-label="Example automation flow">
+        <div class="flow-step">
+          <div class="node">1</div>
+          <div class="label"><strong>Trigger</strong><span>A form submission or scheduled event starts the flow</span></div>
+        </div>
+        <div class="flow-connector"></div>
+        <div class="flow-step">
+          <div class="node">2</div>
+          <div class="label"><strong>Webhook</strong><span>Data is sent to n8n over HTTP</span></div>
+        </div>
+        <div class="flow-connector"></div>
+        <div class="flow-step">
+          <div class="node">3</div>
+          <div class="label"><strong>Workflow</strong><span>Rules, filters and formatting are applied in n8n</span></div>
+        </div>
+        <div class="flow-connector"></div>
+        <div class="flow-step">
+          <div class="node">4</div>
+          <div class="label"><strong>Sheets / API</strong><span>Records are saved and synced automatically</span></div>
+        </div>
+        <div class="flow-connector"></div>
+        <div class="flow-step">
+          <div class="node">5</div>
+          <div class="label"><strong>Notify</strong><span>A message or report goes out with no manual step</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY ============ -->
+  <section id="journey">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Journey</h2>
+        <p>From a chemical pathology lab to shipping web interfaces.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2025, Present</div>
+          <div class="timeline-node"><span></span></div>
+          <div class="timeline-content">
+            <h3>Corps Member, NYSC</h3>
+            <span class="org">Community Commercial Secondary School, Botem-Tai, Rivers State</span>
+            <p>Serving as Place of Primary Assignment while leading as elected CDS President for the FRSC Community Development Service group, where he designed and built the FRSC CDS Attendance &amp; Fine Tracker.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Mar 2025</div>
+          <div class="timeline-node"><span></span></div>
+          <div class="timeline-content">
+            <h3>B.Sc. Medical Biochemistry</h3>
+            <span class="org">University of Cross River State (UNICROSS), Second Class Honours (Lower Division)</span>
+            <p>Graduated with a science foundation that still shapes how he approaches structured data and precise, repeatable process.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-node"><span></span></div>
+          <div class="timeline-content">
+            <h3>Industrial Training Student</h3>
+            <span class="org">Chemical Pathology Department, University of Calabar Teaching Hospital</span>
+            <p>Ran biochemical assays on clinical samples and kept accurate, chain-of-custody patient records over a six-month placement.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2018, 2019</div>
+          <div class="timeline-node"><span></span></div>
+          <div class="timeline-content">
+            <h3>Computer Operations Manager</h3>
+            <span class="org">Divine Grace Computer, Calabar</span>
+            <p>Ran daily operations for a computer training and ICT service centre, supporting more than 20 clients a day and troubleshooting hardware and software issues.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2018</div>
+          <div class="timeline-node"><span></span></div>
+          <div class="timeline-content">
+            <h3>Diploma in Graphic Design</h3>
+            <span class="org">MadePro Computer Education ICT Solutions, Calabar, Upper Credit</span>
+            <p>Where the design half of McGregor-Codes started, before it met the code half.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <div class="reveal">
+        <h2>Have an idea? Let's build it.</h2>
+        <p class="contact-lede">Open to frontend, UI/UX and automation work, freelance or full-time. Based in Port Harcourt, reachable anywhere.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:mcgregorjohn53@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="#" data-whatsapp="2348161249729" target="_blank" rel="noopener">Message on WhatsApp</a>
+        </div>
+      </div>
+
+      <dl class="contact-channels reveal">
+        <a href="mailto:mcgregorjohn53@gmail.com"><span class="label">Email</span> mcgregorjohn53@gmail.com</a>
+        <a href="#" data-whatsapp="2348161249729" target="_blank" rel="noopener"><span class="label">WhatsApp</span> +234 816 124 9729</a>
+        <a href="https://github.com/McGregor-Codes" target="_blank" rel="noopener"><span class="label">GitHub</span> github.com/McGregor-Codes</a>
+        <a href="https://www.linkedin.com/in/mcgregor-codes" target="_blank" rel="noopener"><span class="label">LinkedIn</span> in/mcgregor-codes</a>
+        <a href="https://www.instagram.com/john.mcgregor.77" target="_blank" rel="noopener"><span class="label">Instagram</span> @john.mcgregor.77</a>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="footer-brand" href="#home">
+        <img src="assets/images/logo-light.png" alt="" width="20" height="14">
+        McGregor-Codes
+      </a>
+      <p class="footer-tag">Code. Design. Automate.</p>
+    </div>
+
+    <nav class="footer-social" aria-label="Social links">
+      <a href="https://github.com/McGregor-Codes" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/mcgregor-codes" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/john.mcgregor.77" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+
+    <p class="footer-meta">© <span data-year>2026</span> John McGregor. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
